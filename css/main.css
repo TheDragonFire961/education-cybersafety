@@ -1,0 +1,58 @@
+/*
+    main.css: contains all the CSS that's used to format the pages here.
+	
+    Copyright (C) 2019 Ethan/TheDragonFire961.
+    This file is part of Education Cybersafety.
+	
+    Education Cybersafety is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Education Cybersafety is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with Education Cybersafety.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.nodisplay {
+    display: none;
+}
+
+body {
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 85%
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(OpenSans-Regular-webfont.woff);
+}
+.button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: Open Sans, Arial;
+    box-shadow: none;
+    color: #000000;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.button:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+.green {
+    background-color: #00dd00;
+}
+.red {
+    background-color: #dd0000;
+}
