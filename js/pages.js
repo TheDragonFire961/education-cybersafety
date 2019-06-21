@@ -1,23 +1,28 @@
 /*
     textjs: contains JS for working with text.
 	
-	Copyright (C) 2019 Ethan/TheDragonFire961.
+    Copyright (C) 2019 Ethan/TheDragonFire961.
 
-    This program is free software: you can redistribute it and/or modify
+    This file is part of Education Cybersafety.
+    
+    Education Cybersafety is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
+    Education Cybersafety is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Lesser General Public License for more details.
 
     You should have received a copy of the GNU Lesser General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    along with Education Cybersafety.  If not, see <https://www.gnu.org/licenses/>.
 	
-	Important licencing note: The actual rendered content here is licenced under a Creative Commons
-	Attribution 4.0 license: <https://creativecommons.org/licenses/by/4.0/>
+    To contact the authors of this program, email <qpcc_tdf961(AT)outlook.com>. See the
+    GitHub repo for this project: https://github.com/TheDragonFire961/education-cybersafety
+	
+    Important licencing note: The actual rendered content here is licenced under a Creative Commons
+    Attribution 4.0 license: <https://creativecommons.org/licenses/by/4.0/>
 */
 
 /* 
