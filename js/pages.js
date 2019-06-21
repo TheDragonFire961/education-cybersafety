@@ -2,7 +2,6 @@
     textjs: contains JS for working with text.
 	
     Copyright (C) 2019 Ethan/TheDragonFire961.
-
     This file is part of Education Cybersafety.
     
     Education Cybersafety is free software: you can redistribute it and/or modify
