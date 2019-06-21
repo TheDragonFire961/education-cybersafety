@@ -3,7 +3,7 @@
 <!--
     index.html: the core page for this entry to the Queensland Premier's Coding Challenge.
     Copyright (C) 2019 Ethan/TheDragonFire961.
-	This file is part of Education Cybersafety.
+    This file is part of Education Cybersafety.
 	
     Education Cybersafety is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
@@ -24,44 +24,44 @@
     <head lang="en"><!--@todo: Create language switcher via JS-->
 	<!--All comments in the source code are mine (Ethan's), unless signed by Lillianna to indicate that. A TILDE (~) indicates
 	a sig (e.g, ~Lilly), as in a quarter of a MediaWiki signature (~~~~)-->
-	    <link rel="stylesheet" type="text/css" href="css/main.css">
-		<title>Queensland Premier's Coding Challenge - Not loaded</title><!--Default title, because null titles break things.-->
-		<!--@todo: Insert favicon-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Queensland Premier's Coding Challenge - Not loaded</title><!--Default title, because null titles break things.-->
+	<!--@todo: Insert favicon-->
     </head>
     <body>
-	    <div id="error-message" class="nodisplay"><!--@todo: Create CSS styling-->
-		    <div>An error occured. Click <a href="#" id="error-more-detail-link">here</a> for more information.</div>
-		</div>
-	    <!--Wrap main content in scriptonly class'd tag-->
+	<div id="error-message" class="nodisplay"><!--@todo: Create CSS styling-->
+	    <div>An error occured. Click <a href="#" id="error-more-detail-link">here</a> for more information.</div>
+	</div>
+        <!--Wrap main content in scriptonly class'd tag-->
         <div id="wrapper" class="scriptonly">
-	        <div id="content">
+	    <div id="content">
 	            
-			</div>
 	    </div>
-		<!--Error message for non-JS browsers. Blank screens are bad, mmkay?-->
-		<noscript>
-		    <p>It appears your browser does not support JavaScript or has it disabled.</p>
+	</div>
+	<!--Error message for non-JS browsers. Blank screens are bad, mmkay?-->
+	<noscript>
+	    <p>It appears your browser does not support JavaScript or has it disabled.</p>
             <p>This entry requires that JavaScript is enabled for it to run properly. Please check your browser settings.</p>
-		</noscript>
-		<!--Contains all _footer_ scripts.-->
-		<div class="nodisplay" id="lowerscriptcontainer">
-		    <script src="js/errorHandler.js"></script><!--This doesn't fricking work damnit-->
-		    <!--Note that JS doesn't have a PHP-esque include statement; this means that _every_ script needs to be included here.
-			Pain in the ass, I know, but we have to roll with it.-->
+	</noscript>
+	<!--Contains all _footer_ scripts.-->
+        <div class="nodisplay" id="lowerscriptcontainer">
+            <script src="js/errorHandler.js"></script><!--This doesn't fricking work damnit-->
+	    <!--Note that JS doesn't have a PHP-esque include statement; this means that _every_ script needs to be included here.
+    	    Pain in the ass, I know, but we have to roll with it.-->
             <script src="js/text.js"></script><!--Text script.-->
-			<script src="js/pages.js"></script><!--Page script (handles the "pages" that customers see).-->
-			<!--On initialisation code-->
-			<script>
+     	    <script src="js/pages.js"></script><!--Page script (handles the "pages" that customers see).-->
+	    <!--On initialisation code-->
+     	    <script>
 text = new textClass();
 text.Title("Queensland Premier's Coding Challenge");
             </script>
-			<!--Testing sandbox for code; in the final product, this script block should be empty.-->
-			<script>
+	    <!--Testing sandbox for code; in the final product, this script block should be empty.-->
+    	    <script>
 text.Queue(text.NewButton("Clear the DOM", 'button', 'text.Clear();', '', 'button red'));
 text.Queue(true, true);
 throw "Test exception";
             <!--END script testing sandbox block.-->
             </script>
-		</div>
+	</div>
    </body>
 </html>
