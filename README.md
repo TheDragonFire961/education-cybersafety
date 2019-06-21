@@ -18,7 +18,7 @@ These steps *should* work on the majority of Windows computers. If it does not, 
 ## Authors and licence information
 The authors of this project are Ethan (GitHub username TheDragonFire961 and the one that is being called in first person below) and Lillianna (herein known as Lilly).
 
-Code used here that was written either by myself or Lilly is licenced under the GNU Lesser General Public Licence v3.0. See the COPYING.md and COPYING.LESSER.md files for rights and full text. **You need to read both files to understand your rights fully.** This *does not apply to article text*. Imported code (e.g, from StackOverflow) will be credited with a source code comment, e.g, as below:
+Code used here that was written either by myself or Lilly is licenced under the GNU Lesser General Public Licence v3.0. See the COPYING.md and COPYING.LESSER.md files for rights and full text. Education Cybersafety is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. **You need to read both files to understand your rights fully.** This *does not apply to article text*. Imported code (e.g, from StackOverflow) will be credited with a source code comment, e.g, as below:
 ~~~~
 // Code here is sourced from this location: <https://example.com>
 function ExampleFunction() {
