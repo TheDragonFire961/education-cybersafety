@@ -1,3 +1,5 @@
+Education Cybersafety is licensed under the GNU Lesser General Public License 3.0, an extension to the GNU General Public License 3.0. The full legal text for the GPL 3.0 is located at COPYING.GPL3.0.md.
+
 ### GNU LESSER GENERAL PUBLIC LICENSE
 
 Version 3, 29 June 2007
@@ -155,5 +157,3 @@ whether future versions of the GNU Lesser General Public License shall
 apply, that proxy's public statement of acceptance of any version is
 permanent authorization for you to choose that version for the
 Library.
-
-Note: The full legal text for the GPL 3.0 is located at [COPYING.GPL3.0.md](https://github.com/TheDragonFire961/education-cybersafety/blob/master/COPYING.GPL3.0.md).
