@@ -16,7 +16,7 @@ These steps *should* work on the majority of Windows computers. If it does not, 
 6. In the screen that appears, choose your browser of choice. If you *still* do not see your browser, we're getting into more advanced methods that go beyond the scope of this README. Please look up instructions for your respective browser.
 
 ### Via GitHub Pages
-The project may also be viewed online via this repository's [GitHub Pages website][https://thedragonfire961.github.io/education-cybersafety/]. Its content is always the same as that of the master branch.
+The project may also be viewed online via this repository's [GitHub Pages website](https://thedragonfire961.github.io/education-cybersafety/). Its content is always the same as that of the master branch.
 
 ## Authors and licence information
 The authors of this project are Ethan (GitHub username TheDragonFire961 and the one that is being called in first person below) and Lillianna (herein known as Lilly).
