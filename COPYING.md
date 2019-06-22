@@ -1,3 +1,5 @@
+Education Cybersafety is licensed under the GNU Lesser General Public License 3.0, an extension to the GNU General Public License 3.0. The full legal text for both licenses is included below.
+
 ### GNU GENERAL PUBLIC LICENSE
 
 Version 3, 29 June 2007
