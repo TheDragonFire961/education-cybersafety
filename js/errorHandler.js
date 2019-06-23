@@ -48,6 +48,7 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
 }
 
 window.onerror = function(message, source, lineno, colno, error) {
+    console.log("Am I really executing?");
     Panic(message, source, lineno, colno, error);
 }
 
