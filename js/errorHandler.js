@@ -21,9 +21,9 @@
 /* 
     This event listener will listen for any crap that happens to fail (an error, for you non-techies).
     JS errors still screw up page execution, but at least they'll get an explanation as to _why_ this 
-	piece of anticyberbullying crap failed, kernel panic style.
-	
-	Note that error messages are different across browsers. 
+    piece of anticyberbullying crap failed, kernel panic style.
+ 
+    Note that error messages are different across browsers. 
 */
 
 function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names of vars
