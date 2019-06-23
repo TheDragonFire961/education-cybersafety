@@ -1,7 +1,7 @@
 /*
     errorHandler.js: contains error handlers and panic events.
 	
-	Copyright (C) 2019 Ethan/TheDragonFire961.
+    Copyright (C) 2019 Ethan/TheDragonFire961.
     This file is part of Education Cybersafety.
 	
     Education Cybersafety is free software: you can redistribute it and/or modify
@@ -28,25 +28,26 @@
 
 function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names of vars
     // The main message of this function is "Crap, something's gone really wrong, that has just 
-	// killed all the JS." Idiots, please don't call this _unless_ a breaking error has occured. 
-	// This function is not too dissimilar to unix kernel panics.
-	// Create a new variable to hold the DOM pointer for the error div
-	var errorMessageDiv = document.getElementById("error-message");
-	try { 
-	    // We really don't need failures of our error handler. Provide as much protection as 
-		// possible, even if it is the dreaded try block.
-	    // Make errorMessageDiv visible
-		errorMessageDiv.class = '';
-	}
-	catch (error) {
+    // killed all the JS." Idiots, please don't call this _unless_ a breaking error has occured. 
+    // This function is not too dissimilar to unix kernel panics.
+    // Create a new variable to hold the DOM pointer for the error div 
+    var errorMessageDiv;
+    errorMessageDiv = document.getElementById("error-message");
+    try { 
+        // We really don't need failures of our error handler. Provide as much protection as 
+	// possible, even if it is the dreaded try block.
+        // Make errorMessageDiv visible
+	errorMessageDiv.class = '';
+    }
+    catch (error) {
 	
-	}
-	finally {
-		// The crap that's _always_ executed. Happy debugging.
-	}
+    }
+    finally {
+	// The crap that's _always_ executed. Happy debugging.
+    }
 }
 
 window.onerror = function(message, source, lineno, colno, error) {
-	Panic(message, source, lineno, colno, error);
+    Panic(message, source, lineno, colno, error);
 }
 
