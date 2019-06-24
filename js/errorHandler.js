@@ -31,24 +31,24 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
     // killed all the JS." Idiots, please don't call this _unless_ a breaking error has occured. 
     // This function is not too dissimilar to unix kernel panics.
     // Create a new variable to hold the DOM pointer for the error div 
+    console.log("Am I really executing?");
     var errorMessageDiv;
     errorMessageDiv = document.getElementById("error-message");
     try { 
         // We really don't need failures of our error handler. Provide as much protection as 
 	// possible, even if it is the dreaded try block.
         // Make errorMessageDiv visible
-	errorMessageDiv.class = '';
+	
     }
-    catch (error) {
+    catch (error) { // Holy fucking shit we broke our error handler
 	
     }
     finally {
-	// The crap that's _always_ executed. Happy debugging.
+	errorMessageDiv.class = ''; // This must always be done
     }
 }
 
 window.onerror = function(message, source, lineno, colno, error) {
-    console.log("Am I really executing?");
     Panic(message, source, lineno, colno, error);
 }
 
