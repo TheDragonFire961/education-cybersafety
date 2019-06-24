@@ -44,7 +44,7 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
 	
     }
     finally {
-	errorMessageDiv.class = ''; // This must always be done
+	errorMessageDiv.class = 'visible'; // This must always be done
     }
 }
 
