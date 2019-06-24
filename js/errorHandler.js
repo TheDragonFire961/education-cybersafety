@@ -44,7 +44,8 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
 	
     }
     finally {
-	errorMessageDiv.class = 'visible'; // This must always be done
+	errorMessageDiv.className = ''; // This must always be done.
+	// Now remember, it's className, not class. I had the most "Oh, right, fuck" moment when I realised that shit
     }
 }
 
