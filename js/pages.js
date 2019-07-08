@@ -30,7 +30,7 @@
 	can be shown by the JS. We use the text.js functions to accomplish this. Note that all fonts
     render as Open Sans. Any .docx advanced formatting _will_ probably be lost unless it has a
     HTML equivelent. 	
-	All of Lilly's work is located in the root/docs directory.
+	All of Lilly's work is located in the root/sources directory.
 	
 	@dependencies text.js
 */  
