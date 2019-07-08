@@ -42,6 +42,45 @@ class textClass {
 		}
 	    return "<p" + parameters + ">" + content + "</p>";
 	}
+    NewDiv(content = '', HTMLclass = '', id = '', others = '') {
+		var parameters = '';
+		if (HTMLclass !== '') {
+		    parameters += ' class="' + HTMLclass + '"';
+		} 
+		if (id !== '') {
+		    parameters += ' id="' + id + '"';
+		} 
+		if (others !== '') {
+		    parameters += ' ' + others;
+		}
+	    return "<div" + parameters + ">" + content + "</div>";
+	}
+    NewSpan(content = '', HTMLclass = '', id = '', others = '') {
+		var parameters = '';
+		if (HTMLclass !== '') {
+		    parameters += ' class="' + HTMLclass + '"';
+		} 
+		if (id !== '') {
+		    parameters += ' id="' + id + '"';
+		} 
+		if (others !== '') {
+		    parameters += ' ' + others;
+		}
+	    return "<span" + parameters + ">" + content + "</span>";
+	}
+     NewH(rank, content = '', HTMLclass = '', id = '', others = '') {
+		var parameters = '';
+		if (HTMLclass !== '') {
+		    parameters += ' class="' + HTMLclass + '"';
+		} 
+		if (id !== '') {
+		    parameters += ' id="' + id + '"';
+		} 
+		if (others !== '') {
+		    parameters += ' ' + others;
+		}
+	    return "<h" + rank + parameters + ">" + content + "</h" + rank + '>';
+	}
 	// textClass.NewA(): creates a new hyperlink (a tag).
 	NewA(label = '', href = 'button', onclickTarget = '', rel = 'noopener', target = '_self', id = '', HTMLclass = '', others = '') {
 		var parameters = '';
@@ -101,8 +140,7 @@ class textClass {
         //
 		// Best create the URL before injecting it
 		var imgRefFull = 'index.html?mode=image&amp;imgRef=' + imgRef;
-		// Return a recursively created hyperlink and image combo.
-		return this.NewA(this.NewImg(path, alt, imgHTMLClass, imgId, imgOthers), imgRef, onclickTarget, 'noopener', '_blank', id, HTMLClass, others);
+		return this.NewA(this.NewImg(path, alt, imgHTMLClass, imgId, imgOthers), imgRef, onclickTarget, 'noopener', '_blank', id, HTMLClass, others); // this... hell
 	}
 	// Following are publishing functions. The constructor functions _don't_ publish text 
 	// automatically; it must be passed through a publishing function.
