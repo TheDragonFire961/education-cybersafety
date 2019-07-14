@@ -184,7 +184,7 @@ class Ref {
 	constructor() {
 		
 	}
-    Web(page_name, site_name, author = anon, is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters = null) {
+    Web(uri, page_name, site_name, author = anon, is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters = null) {
         // Do nothing since implementation is not written yet
     }
 }
