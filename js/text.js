@@ -146,7 +146,7 @@ class textClass {
 	// automatically; it must be passed through a publishing function.
 	// textClass.Print(): Prints the content to DOM.
 	Print(content) {
-		return this.content.innerHTML += content;
+		return this.content.insertAdjacentHTML('beforeend', content);
 	}
 	// textClass.Clear(): Clears the DOM entirely. Useful for resetting the page?
 	Clear() {
