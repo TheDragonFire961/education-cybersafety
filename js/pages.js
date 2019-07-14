@@ -1,5 +1,5 @@
 /*
-    textjs: contains JS for working with text.
+    pages.js: contains JS for working with text.
 	
     Copyright (C) 2019 Ethan/TheDragonFire961.
     This file is part of Education Cybersafety.
@@ -22,15 +22,26 @@
 	
     Important licencing note: The actual rendered content here is licenced under a Creative Commons
     Attribution 4.0 license: <https://creativecommons.org/licenses/by/4.0/>
-*/
-
-/* 
-    What will eventually end up in this JS script needs to be prepared by Lilly first, since I'm 
-	distracted with coding this piece of crap; then it can be codified by me to make a page that 
-	can be shown by the JS. We use the text.js functions to accomplish this. Note that all fonts
-    render as Open Sans. Any .docx advanced formatting _will_ probably be lost unless it has a
-    HTML equivelent. 	
-	All of Lilly's work is located in the root/sources directory.
-	
+    
 	@dependencies text.js
 */  
+
+class Pages {
+    // Naming syntax:
+    // Each page has its own function in this format (underscores for emphasis):
+    // *So, if we had a page about _Digital Footprint_, wholly written by _Lilly_ (if you don't know who she is, that's an alias for
+    //  Lillianna), then we would give it the following name, in snake case, preserving original caps. Shorthand author codes:
+    //  **En: Ethan (the author of this comment) 
+    Digital_footprint() {
+        // @started 12:08 PM 14/07/2019
+        // @implemented en
+        // @author li
+        // Pointer to original DOCX file: 
+        this.text.Queue(this.text.NewH(1, 'Digital Footprint'));
+        this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity.' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format = DATEFORMAT_jFY}));
+    }
+    constructor() {
+        this.text = new Text();
+        this.ref = new Ref();
+    }
+}
