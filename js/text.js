@@ -161,7 +161,7 @@ class textClass {
 		} else {
 		    this.queue += content;
 		}
-		if (flush === true) {
+		if (flush === true)
 			this.queue = ''; // Clears queue
 		}
 	}
@@ -184,4 +184,7 @@ class Ref {
 	constructor() {
 		
 	}
+    Reference() {
+        // Do nothing since implementation is not written yet
+    }
 }
