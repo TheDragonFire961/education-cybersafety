@@ -182,7 +182,7 @@ class textClass {
 // look like this: [1] and can be hovered over by the user to get a reference.
 class Ref {
 	constructor() {
-		
+		const DATEFORMAT_jFY = 'DATEFORMAT_jFY';
 	}
     Web(uri, page_name, site_name, author = anon, is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters = null) {
         // Do nothing since implementation is not written yet
