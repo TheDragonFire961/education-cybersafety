@@ -26,7 +26,7 @@
 	<!--All comments in the source code are mine (Ethan's), unless signed by Lillianna to indicate that. A TILDE (~) indicates
 	a sig (e.g, ~Lilly), as in a quarter of a MediaWiki signature (~~~~)-->
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <title>Queensland Premier's Coding Challenge - Not loaded</title><!--Default title, because null titles break things.-->
+        <title>Education Cybersafety - Not loaded</title><!--Default title, because null titles break things.-->
 	<!--@todo: Insert favicon-->
     </head>
     <body>
@@ -46,7 +46,7 @@
 	</noscript>
 	<!--Contains all _footer_ scripts.-->
         <div class="nodisplay" id="lowerscriptcontainer">
-            <script src="js/error_handler.js"></script><!--This doesn't fricking work damnit-->
+            <script src="js/error_handler.js"></script>
 	    <!--Note that JS doesn't have a PHP-esque include statement; this means that _every_ script needs to be included here.
     	    Pain in the ass, I know, but we have to roll with it.-->
             <script src="js/text.js"></script><!--Text script.-->
@@ -55,12 +55,11 @@
      	    <script>
 text = new textClass();
 text.Title("Queensland Premier's Coding Challenge");
+pages = new Pages();
+pages.Run();
             </script>
 	    <!--Testing sandbox for code; in the final product, this script block should be empty.-->
     	    <script>
-text.Queue(text.NewButton("Clear the DOM", 'button', 'text.Clear();', '', 'button red'));
-text.Queue(true, true);
-throw "Test exception";
             </script>
 	    <!--END script testing sandbox block.-->
 	</div>
