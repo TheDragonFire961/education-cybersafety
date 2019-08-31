@@ -61,7 +61,7 @@ class Pages {
 	    }
         if (page === "Digital_footprint") {
             this.pageId = "Digital_footprint";
-            this.Digital_footprint;
+            this.Digital_footprint();
         }
     }
     constructor() {        
