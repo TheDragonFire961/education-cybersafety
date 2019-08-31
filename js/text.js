@@ -81,7 +81,6 @@ class textClass {
 	// textClass.NewA(): creates a new hyperlink (a tag).
 	NewA(label = '', href = 'button', onclickTarget = '', rel = 'noopener', target = '_self', id = '', HTMLclass = '', others = '') {
 		var parameters = '';
-		parameters += ' type="' + type + '"'; 
 		if (onclickTarget !== '') {
 		    parameters += ' onclick="' + onclickTarget + '"';
 		}
