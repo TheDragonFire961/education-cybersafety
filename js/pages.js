@@ -49,9 +49,11 @@ class Pages {
     LoadPage(page) {
         if (page = "Introduction") {
             this.pageId = "Introduction";
+            this.Introduction();
         }
     }
-    constructor() {        this.text = new Text();
+    constructor() {        
+        this.text = new Text();
         this.ref = new Ref();
     }
     
