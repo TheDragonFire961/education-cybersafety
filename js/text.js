@@ -21,9 +21,6 @@
     GitHub repo for this project: https://github.com/TheDragonFire961/education-cybersafety
 */
 
-// @note: Ace editor doesn't fucking remember my whitespace settings, so remember to set that before a drunk coding
-// run
-
 // The text class contains all methods necessary to build, well, text!
 class textClass {
 	// Defines go in the construct function at the end 
