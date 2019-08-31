@@ -50,10 +50,13 @@ class Pages {
         this.LoadPage("Introduction");
     }
     LoadPage(page) {
-        if (page = "Introduction") {
+        if (page === "Introduction") {
             this.pageId = "Introduction";
             this.Introduction();
         }
+	if (page === "Identity_theft") {
+		
+	}
     }
     constructor() {        
         this.text = new textClass();
