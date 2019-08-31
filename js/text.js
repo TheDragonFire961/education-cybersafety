@@ -96,7 +96,7 @@ class textClass {
 		if (HTMLclass !== '') {
 		    parameters += ' class="' + HTMLclass + '"';
 		}
-	    return "<button" + parameters + ">" + label + "</button>";
+	    return "<a" + parameters + ">" + label + "</a>";
 	}
 	// textClass.NewButton() creates a new button.
 	NewButton(label = '', type = 'button', onclickTarget = '', id = '', HTMLclass = '', others = '') {
