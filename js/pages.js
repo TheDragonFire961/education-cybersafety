@@ -40,7 +40,7 @@ class Pages {
         // @author li
         // Pointer to original DOCX file: 
         this.text.Queue(this.text.NewH(1, 'Digital Footprint'));
-        this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity.' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format = DATEFORMAT_jFY}));
+        this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity.' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format = DATEFORMAT_jFY})));
     }
     Run() {
         // Starts the page handler.
