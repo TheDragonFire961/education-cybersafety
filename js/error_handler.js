@@ -1,5 +1,5 @@
 /*
-    errorHandler.js: contains error handlers and panic events.
+    error_handler.js: contains error handlers and panic events.
 	
     Copyright (C) 2019 Ethan/TheDragonFire961.
     This file is part of Education Cybersafety.
@@ -31,7 +31,6 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
     // killed all the JS." Idiots, please don't call this _unless_ a breaking error has occured. 
     // This function is not too dissimilar to unix kernel panics.
     // Create a new variable to hold the DOM pointer for the error div 
-    console.log("Am I really executing?");
     var errorMessageDiv;
     errorMessageDiv = document.getElementById("error-message");
     try { 
@@ -40,7 +39,7 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
         // Make errorMessageDiv visible
 	
     }
-    catch (error) { // Holy fucking shit we broke our error handler
+    catch (error) {
 	
     }
     finally {
