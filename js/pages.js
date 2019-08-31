@@ -33,8 +33,8 @@ class Pages {
     //  **En: Ethan (the author of this comment)
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
-	    this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
-        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Introduction to identity theft', '#', "pages.LoadPage('Identity_theft')") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint')") + </ul>'));
+        this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Introduction to identity theft', '#', "pages.LoadPage('Identity_theft')") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint')") + '</ul>'));
         this.text.Queue(true, true);
     }
     Digital_footprint() {
@@ -65,8 +65,7 @@ class Pages {
     }
     constructor() {        
         this.text = new textClass();
-        
-        = new Ref();
+        this.ref = new Ref();
     }
     
 }
