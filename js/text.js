@@ -177,10 +177,21 @@ class textClass {
 // This class contains constructs for a single in-text reference. We use the WP format here: they
 // look like this: [1] and can be hovered over by the user to get a reference.
 class Ref {
-	constructor() {
+    constructor() {
 		const DATEFORMAT_jFY = 'DATEFORMAT_jFY';
+        this.reflist = [];
+        this.entries = 0;
 	}
-    Web(uri, page_name, site_name, author = anon, is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters = null) {
-        // Do nothing since implementation is not written yet
+    Web() {
+        // uri, page_name, site_name, author = 'anon', is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters =
+        // Add a list to the reference engine
+        var i;
+        for (i = 0; i < arguments.length; i++) {
+            this.reflist[entries][i] = arguments[i];
+        }
+        // ^^ Partially sourced from W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum
+    }
+    Clear() {
+        return this.reflist = [];
     }
 }
