@@ -34,7 +34,7 @@ class Pages {
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
 	    this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
-        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Introduction to identity theft') + '</li></ul>'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Introduction to identity theft', '#', "pages.LoadPage('Identity_theft')") + '</li></ul>'));
         this.text.Queue(true, true);
     }
     Digital_footprint() {
@@ -46,7 +46,7 @@ class Pages {
         this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity.' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format: DATEFORMAT_jFY}))); // When Edge DevTools says you need an additional bracket but you don't know what the hell it's talking about. Thanks to THIS line of code I'm neglecting one of Lilly's emails! How fun.
     }
     Run() {
-        // Starts the page handler.
+        // Starts the page handler. '
         this.LoadPage("Introduction");
     }
     LoadPage(page) {
