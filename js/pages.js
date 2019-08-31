@@ -33,6 +33,8 @@ class Pages {
     //  **En: Ethan (the author of this comment)
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
+	    this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + NewA('Introduction to identity theft') + '</li></ul>'));
         this.text.Queue(true, true);
     }
     Digital_footprint() {
