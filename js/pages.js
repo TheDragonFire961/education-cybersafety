@@ -33,6 +33,7 @@ class Pages {
     //  **En: Ethan (the author of this comment)
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
+        this.text.Queue(true, true);
     }
     Digital_footprint() {
         // @started 12:08 PM 14/07/2019
