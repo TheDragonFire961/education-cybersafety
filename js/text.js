@@ -158,7 +158,7 @@ class textClass {
 		} else {
 		    this.queue += content;
 		}
-		if (flush === true)
+		if (flush === true) {
 			this.queue = ''; // Clears queue
 		}
 	}
