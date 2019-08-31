@@ -17,12 +17,7 @@
     You should have received a copy of the GNU Lesser General Public License
     along with Education Cybersafety.  If not, see <https://www.gnu.org/licenses/>.
 */
-/*
-Now, CSS is a pain. A pain in my fucking ass. Even comments are difficult to write.
-CSS is the most shit programming language I've learnt so far.
-This comment swearing better not get me in trouble with Queensland Premier's Coding Challenge.
-Or Lillianna. Especially not her.
-*/
+
 .nodisplay {
     display: none;
 }
@@ -60,4 +55,7 @@ body {
 }
 .red {
     background-color: #dd0000;
+}
+h1 {
+    text-align: center;
 }
