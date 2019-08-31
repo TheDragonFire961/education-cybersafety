@@ -51,8 +51,7 @@ class Pages {
             this.pageId = "Introduction";
         }
     }
-    constructor() {
-        this.text = new Text();
+    constructor() {        this.text = new Text();
         this.ref = new Ref();
     }
     
