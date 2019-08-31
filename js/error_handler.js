@@ -33,11 +33,12 @@ function Panic (message, url, lineNo, columnNo, error) { // @fixme: Change names
     // Create a new variable to hold the DOM pointer for the error div 
     var errorMessageDiv;
     errorMessageDiv = document.getElementById("error-message");
+    var error_message_description = document.getElementById("error_message_description");
     try { 
         // We really don't need failures of our error handler. Provide as much protection as 
 	// possible, even if it is the dreaded try block.
-        // Make errorMessageDiv visible
-	
+        // Add an error code
+	error_message_description.innerHTML = message;
     }
     catch (error) {
 	
