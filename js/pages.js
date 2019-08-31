@@ -53,7 +53,7 @@ class Pages {
         }
     }
     constructor() {        
-        this.text = new Text();
+        this.text = new textClass();
         this.ref = new Ref();
     }
     
