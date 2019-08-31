@@ -24,14 +24,16 @@
     Attribution 4.0 license: <https://creativecommons.org/licenses/by/4.0/>
     
 	@dependencies text.js
-*/  
-
+*/ 
 class Pages {
     // Naming syntax:
     // Each page has its own function in this format (underscores for emphasis):
     // *So, if we had a page about _Digital Footprint_, wholly written by _Lilly_ (if you don't know who she is, that's an alias for
     //  Lillianna), then we would give it the following name, in snake case, preserving original caps. Shorthand author codes:
-    //  **En: Ethan (the author of this comment) 
+    //  **En: Ethan (the author of this comment)
+    Introduction() {
+        this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
+    }
     Digital_footprint() {
         // @started 12:08 PM 14/07/2019
         // @implemented en
@@ -40,8 +42,18 @@ class Pages {
         this.text.Queue(this.text.NewH(1, 'Digital Footprint'));
         this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity.' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format = DATEFORMAT_jFY}));
     }
+    Run() {
+        // Starts the page handler.
+        this.LoadPage("Introduction");
+    }
+    LoadPage(page) {
+        if (page = "Introduction") {
+            this.pageId = "Introduction";
+        }
+    }
     constructor() {
         this.text = new Text();
         this.ref = new Ref();
     }
+    
 }
