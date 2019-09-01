@@ -191,14 +191,20 @@ class Ref {
         for (i = 0; i < arguments.length; i++) { 
             this.reflist[this.entries][i + 1] = arguments[i];
         }
+	var date;
+	if (this.reflist[this.entries][6] === null { 
+	    date = "n.d.";
+	} else {
+	    date = this.reflist[this.entries][6];
+	}
         if (this.reflist[this.entries][5] === true) {
 			var entries_temp = this.entries;
             this.entries++;
-            return '(' + this.reflist[entries_temp][4] + ', ' + this.reflist[entries_temp][6] + ')';
+            return '(' + this.reflist[entries_temp][4] + ', ' + date + ')';
         } 
 		var entries_temp = this.entries;
         this.entries++;
-        return '(' + this.reflist[entries_temp][4].split(" ").slice(-1)[0] + ', ' + this.reflist[entries_temp][6] + ')';
+        return '(' + this.reflist[entries_temp][4].split(" ").slice(-1)[0] + ', ' + date + ')';
         // ^^ Partially sourced from W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum
     }
     Clear() {
