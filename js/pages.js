@@ -35,7 +35,8 @@ class Pages {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
         this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
         this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft')") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint')") + '</ul>'));
-        this.text.Queue(true, true);
+        this.ref.RefList();
+	this.text.Queue(true, true);
     }
     Identity_theft() {
         this.text.Queue(this.text.NewH(1, 'Impersonation'));
@@ -44,7 +45,8 @@ class Pages {
 However, in retaliation, Marcos started to impersonate her online and solicited sex from groups of men. These men would visit Margaret under the guise that she had given them permission to undertake sexual intercourse with Margaret and harass her about this. Note that the real Margaret had never given them permission for sexual intercourse, but Marcos, impersonating her, had convinced many groups of men that she had. Following her harassment, Margaret moved away from her South Austin, United States home and was diagnosed with post-traumatic stress disorder.'));
         this.text.Queue(this.text.NewP('Advice that was sourced from police following the Margaret incident involves recording the URL [author’s note: or save a local copy, if applicable] of the message and immediately call the social media site to report it. Police state that \
 the operating network should remove the profile but information should be saved for police. Marcos Lujan was convicted of online impersonation, a third-degree felony in the US, and served several months behind bars. However, he was released in early 2015. ' + this.ref.Web('https://www.khou.com/article/news/crime/woman-shares-horrific-online-impersonation-story/148485375', 'Woman shares &#37;horrific&#37; impersonation story', 'KHOU', 'KHOU staff', true, 2015, 'July', 29, 2019, 'July', 2019)));
-        this.text.Queue(true, true);
+        this.ref.RefList();
+	this.text.Queue(true, true);
     }
     Digital_footprint() {
         // @started 12:08 PM 14/07/2019
