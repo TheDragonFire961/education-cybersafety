@@ -223,7 +223,7 @@ class Ref {
 	        } else {
 	            reflist_temp += this.reflist[i][6] + ', <i>';
             }
-            reflist_temp += this.reflist[i][1] + '.</i> [Online]<br>';
+            reflist_temp += this.reflist[i][2] + '.</i> [Online]<br>';
             if (this.reflist[i][0] === "web") {
                 reflist_temp += 'Available at <a href="' + this.reflist[i][1] + '">' + this.reflist[i][1] + '</a>';
             }
