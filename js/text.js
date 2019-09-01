@@ -186,9 +186,10 @@ class Ref {
         // uri, page_name, site_name, author = 'anon', is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters =
         // Add a list to the reference engine
         var i;
+	this.reflist[this.entries][0] = 'web';
         for (i = 0; i < arguments.length; i++) {
             this.reflist[this.entries] = [];
-            this.reflist[this.entries][0] = 'web';
+            
             this.reflist[this.entries][i + 1] = arguments[i];
         }
         if (this.reflist[this.entries][5] === true) {
@@ -198,7 +199,7 @@ class Ref {
         } 
 		var entries_temp = this.entries;
         this.entries++;
-        return '(' + this.reflist[entries_temp][4].slice(-1)[0] + ', ' + this.reflist[entries_temp][6] + ')';
+        return '(' + this.reflist[entries_temp][4].split(" ").slice(-1)[0] + ', ' + this.reflist[entries_temp][6] + ')';
         // ^^ Partially sourced from W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum
     }
     Clear() {
