@@ -188,8 +188,12 @@ class Ref {
         var i;
         for (i = 0; i < arguments.length; i++) {
             this.reflist[this.entries] = [];
-            this.reflist[this.entries][i] = arguments[i];
+            this.reflist[this.entries][0] = 'web';
+            this.reflist[this.entries][i + 1] = arguments[i];
         }
+        if (this.reflist[this.entries][5] === true) {
+            return '(' + this.reflist[this.entries][i][4].slice(-1)[0] + ', ' + this.reflist[this.entries][6] + ')';
+        } 
         this.entries++;
         // ^^ Partially sourced from W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum
     }
