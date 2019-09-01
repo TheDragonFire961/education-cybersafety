@@ -186,10 +186,9 @@ class Ref {
         // uri, page_name, site_name, author = 'anon', is_corporate = false, year, month, day, access_year = null, access_month = null, access_date = null, advanced_parameters =
         // Add a list to the reference engine
         var i;
-	this.reflist[this.entries][0] = 'web';
-        for (i = 0; i < arguments.length; i++) {
-            this.reflist[this.entries] = [];
-            
+        this.reflist[this.entries] = [];
+	    this.reflist[this.entries][0] = 'web';
+        for (i = 0; i < arguments.length; i++) { 
             this.reflist[this.entries][i + 1] = arguments[i];
         }
         if (this.reflist[this.entries][5] === true) {
