@@ -55,11 +55,12 @@ the operating network should remove the profile but information should be saved 
         // @author li
         // Pointer to original DOCX file: 
         this.text.Queue(this.text.NewH(1, 'Digital Footprint'));
+		this.text.Queue(this.text.PageNavbar('Home', "pages.LoadPage('Introduction')", 'Digital Footprint', "pages.LoadPage('Digital_footprint')"));
         this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity. ' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format: 'DATEFORMAT_jFY'}) + ' It includes every piece of information you provide on the internet and includes name, gender, email address and other properties. ' + this.ref.Web('https://prezi.com/jijoyq-jkdrr/the-importance-of-a-positive-digital-footprint/', 'THE IMPORTANCE OF A POSITIVE DIGITAL FOOTPRINT', 'Prezi', 'pr an', true, null, null, null, 2019, 'July', 2, ))); // When Edge DevTools says you need an additional bracket but you don't know what the hell it's talking about. Thanks to THIS line of code I'm neglecting one of Lilly's emails! How fun.
         this.text.Queue(this.text.NewP('An individual&apos;s digital footprint is a self portrait of a person painted online. It can be used to form an image about an individual on the online world. It can be used by future employers and universities to help vet potential students/employees, perhaps disqualifying them if their digital footprint says so.'));
-	this.text.Queue(this.text.NewH(2, 'References'));
-	this.text.Queue(this.ref.RefList());
-	this.text.Queue(true, true);
+	    this.text.Queue(this.text.NewH(2, 'References'));
+	    this.text.Queue(this.ref.RefList());
+	    this.text.Queue(true, true);
     }
     Run() {
         // Starts the page handler. '
