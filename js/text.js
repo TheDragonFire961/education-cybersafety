@@ -212,7 +212,9 @@ class Ref {
         var i;
         var reflist_temp = '<div id="references">';
         for (i = 0; i < this.reflist.length; i++) { 
-            if (this.reflist[i][0] === "web") {
+            if (this.reflist[i][0] === true) {
+		reflist_temp += '<p>' + this.reflist[i][3]    
+	    } else { 
                 var reflist_author_split_temp = this.reflist[i][4].split(" ")
                 reflist_temp += '<p>' + reflist_author_split_temp.slice(-1)[0] + ', ' + reflist_author_split_temp[0].charAt(0) + ', ';
             }
