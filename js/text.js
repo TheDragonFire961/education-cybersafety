@@ -229,7 +229,7 @@ class Ref {
                 reflist_temp += '<br>[Accessed ' + this.reflist[i][9] + ' ' + this.reflist[i][10] + ' ' + this.reflist[i][11] + ']';
             }
         }
-        reflist_temp = '</div>';
+        reflist_temp += '</div>';
         this.Clear();
         return reflist_temp;
     }
