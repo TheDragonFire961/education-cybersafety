@@ -212,7 +212,7 @@ class Ref {
         var i;
         var reflist_temp = '<div id="references">';
         for (i = 0; i < this.reflist.length; i++) { 
-            if (this.reflist[i][0] === true) {
+            if (this.reflist[i][5] === true) {
 		reflist_temp += '<p>' + this.reflist[i][3] + ', ';   
 	    } else { 
                 var reflist_author_split_temp = this.reflist[i][4].split(" ")
@@ -225,7 +225,7 @@ class Ref {
             }
             reflist_temp += this.reflist[i][1] + '.</i> [Online]<br>';
             if (this.reflist[i][0] === "web") {
-                reflist_temp += 'Available at <a href="' + this.reflist[i][0] + '">' + this.reflist[i][0] + '</a>';
+                reflist_temp += 'Available at <a href="' + this.reflist[i][1] + '">' + this.reflist[i][1] + '</a>';
             }
             if (typeof this.reflist[i][9] === 'number' && typeof this.reflist[i][10] === 'string' && typeof this.reflist[i][11] === 'number') {
                 reflist_temp += '<br>[Accessed ' + this.reflist[i][9] + ' ' + this.reflist[i][10] + ' ' + this.reflist[i][11] + ']';
