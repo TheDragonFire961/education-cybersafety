@@ -143,7 +143,7 @@ class textClass {
 		var last_argument = arguments.length - 1;
         for (i = 0; i < arguments.length; i++) { 
             if (n === 0 || !!(n && (n%2))) {
-                 navbar_temp += NewA(arguments[0], arguments[1];
+                 navbar_temp += NewA(arguments[0], '#', arguments[1]);
           		 if (i !== last_argument) {
                      navbar_temp += ' &gt; ';
 		         }
