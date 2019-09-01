@@ -45,7 +45,8 @@ class Pages {
 However, in retaliation, Marcos started to impersonate her online and solicited sex from groups of men. These men would visit Margaret under the guise that she had given them permission to undertake sexual intercourse with Margaret and harass her about this. Note that the real Margaret had never given them permission for sexual intercourse, but Marcos, impersonating her, had convinced many groups of men that she had. Following her harassment, Margaret moved away from her South Austin, United States home and was diagnosed with post-traumatic stress disorder.'));
         this.text.Queue(this.text.NewP('Advice that was sourced from police following the Margaret incident involves recording the URL [author’s note: or save a local copy, if applicable] of the message and immediately call the social media site to report it. Police state that \
 the operating network should remove the profile but information should be saved for police. Marcos Lujan was convicted of online impersonation, a third-degree felony in the US, and served several months behind bars. However, he was released in early 2015. ' + this.ref.Web('https://www.khou.com/article/news/crime/woman-shares-horrific-online-impersonation-story/148485375', 'Woman shares &#37;horrific&#37; impersonation story', 'KHOU', 'KHOU staff', true, 2015, 'July', 29, 2019, 'July', 2019)));
-        this.text.Queue(this.ref.RefList());
+        this.text.Queue(this.text.NewH(2, 'References'));
+	this.text.Queue(this.ref.RefList());
 	this.text.Queue(true, true);
     }
     Digital_footprint() {
@@ -56,6 +57,7 @@ the operating network should remove the profile but information should be saved 
         this.text.Queue(this.text.NewH(1, 'Digital Footprint'));
         this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity. ' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format: 'DATEFORMAT_jFY'}) + ' It includes every piece of information you provide on the internet and includes name, gender, email address and other properties. ' + this.ref.Web('https://prezi.com/jijoyq-jkdrr/the-importance-of-a-positive-digital-footprint/', 'THE IMPORTANCE OF A POSITIVE DIGITAL FOOTPRINT', 'Prezi', 'pr an', true, null, null, null, 2019, 'July', 2, ))); // When Edge DevTools says you need an additional bracket but you don't know what the hell it's talking about. Thanks to THIS line of code I'm neglecting one of Lilly's emails! How fun.
         this.text.Queue(this.text.NewP('An individual&#37;s digital footprint is a self portrait of a person painted online. It can be used to form an image about an individual on the online world. It can be used by future employers and universities to help vet potential students/employees, perhaps disqualifying them if their digital footprint says so.'));
+	this.text.Queue(this.text.NewH(2, 'References'));
 	this.text.Queue(this.ref.RefList());
 	this.text.Queue(true, true);
     }
