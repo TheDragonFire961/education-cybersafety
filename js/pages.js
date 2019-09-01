@@ -34,10 +34,10 @@ class Pages {
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
         this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
-        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Introduction to identity theft', '#', "pages.LoadPage('Identity_theft')") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint')") + '</ul>'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft')") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint')") + '</ul>'));
         this.text.Queue(true, true);
     }
-	Identity_theft() {
+    Identity_theft() {
         this.text.Queue(this.text.NewH(1, 'Impersonation'));
         this.text.Queue(this.text.NewP('Impersonation is the art of stealing a victim’s online identity and/or fraudulently posing as them, and a common issue that can arise from poor online safety. There are a variety of motives to explain why one may choose to impersonate a victim, be it for financial gain, to attack a victim or other means.'));
         this.text.Queue(this.text.NewP('One particular example is of a woman, herein given the pseudonym “Margaret”. Following a date with a man named Marcos Lujan, of nine month’s length, Margaret decided to end her relationship with Marcos. \
@@ -67,7 +67,8 @@ the operating network should remove the profile but information should be saved 
             this.Introduction();
         }
 	    if (page === "Identity_theft") {
-		
+		this.pageId = "Identity_theft";
+		this.Identity_theft();
 	    }
         if (page === "Digital_footprint") {
             this.pageId = "Digital_footprint";
