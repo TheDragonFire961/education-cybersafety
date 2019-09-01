@@ -187,6 +187,7 @@ class Ref {
         // Add a list to the reference engine
         var i;
         for (i = 0; i < arguments.length; i++) {
+            this.reflist[this.entries] = [];
             this.reflist[this.entries][i] = arguments[i];
         }
         this.entries++;
