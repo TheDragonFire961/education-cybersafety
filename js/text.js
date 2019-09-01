@@ -65,7 +65,7 @@ class textClass {
 		}
 	    return "<span" + parameters + ">" + content + "</span>";
 	}
-     NewH(rank, content = '', HTMLclass = '', id = '', others = '') {
+    NewH(rank, content = '', HTMLclass = '', id = '', others = '') {
 		var parameters = '';
 		if (HTMLclass !== '') {
 		    parameters += ' class="' + HTMLclass + '"';
@@ -139,11 +139,17 @@ class textClass {
 		return this.NewA(this.NewImg(path, alt, imgHTMLClass, imgId, imgOthers), imgRef, onclickTarget, 'noopener', '_blank', id, HTMLClass, others); // this... hell
 	}
     PageNavbar() {
+		var navbar_temp = '';
+		var last_argument = arguments.length - 1;
         for (i = 0; i < arguments.length; i++) { 
             if (n === 0 || !!(n && (n%2))) {
-                return NewA(arguments[0], arguments[1];
+                 navbar_temp += NewA(arguments[0], arguments[1];
+          		 if (i !== last_argument) {
+                     navbar_temp += ' &gt; ';
+		         }
             }
         }
+		return navbar_temp;
     }
 	// Following are publishing functions. The constructor functions _don't_ publish text 
 	// automatically; it must be passed through a publishing function.
