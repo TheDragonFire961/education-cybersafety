@@ -138,6 +138,13 @@ class textClass {
 		var imgRefFull = 'index.html?mode=image&amp;imgRef=' + imgRef;
 		return this.NewA(this.NewImg(path, alt, imgHTMLClass, imgId, imgOthers), imgRef, onclickTarget, 'noopener', '_blank', id, HTMLClass, others); // this... hell
 	}
+    PageNavbar() {
+        for (i = 0; i < arguments.length; i++) { 
+            if (n === 0 || !!(n && (n%2))) {
+                return NewA(arguments[0], arguments[1];
+            }
+        }
+    }
 	// Following are publishing functions. The constructor functions _don't_ publish text 
 	// automatically; it must be passed through a publishing function.
 	// textClass.Print(): Prints the content to DOM.
@@ -191,12 +198,12 @@ class Ref {
         for (i = 0; i < arguments.length; i++) { 
             this.reflist[this.entries][i + 1] = arguments[i];
         }
-	var date;
-	if (this.reflist[this.entries][6] === null) { 
-	    date = "n.d.";
-	} else {
-	    date = this.reflist[this.entries][6];
-	}
+    	var date;
+	    if (this.reflist[this.entries][6] === null) { 
+	        date = "n.d.";
+	    } else {
+	        date = this.reflist[this.entries][6];
+	    }
         if (this.reflist[this.entries][5] === true) {
 			var entries_temp = this.entries;
             this.entries++;
@@ -213,7 +220,7 @@ class Ref {
         var reflist_temp = '<div id="references">';
         for (i = 0; i < this.reflist.length; i++) { 
             if (this.reflist[i][5] === true) {
-		reflist_temp += '<p>' + this.reflist[i][3] + ', ';   
+		    reflist_temp += '<p>' + this.reflist[i][3] + ', ';   
 	    } else { 
                 var reflist_author_split_temp = this.reflist[i][4].split(" ")
                 reflist_temp += '<p>' + reflist_author_split_temp.slice(-1)[0] + ', ' + reflist_author_split_temp[0].charAt(0) + ', ';
