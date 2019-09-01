@@ -192,7 +192,7 @@ class Ref {
             this.reflist[this.entries][i + 1] = arguments[i];
         }
 	var date;
-	if (this.reflist[this.entries][6] === null { 
+	if (this.reflist[this.entries][6] === null) { 
 	    date = "n.d.";
 	} else {
 	    date = this.reflist[this.entries][6];
