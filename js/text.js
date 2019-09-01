@@ -1,5 +1,5 @@
 /*
-    textjs: contains JS for working with text.
+    text.js: contains JS for working with text.
     
     Copyright (C) 2019 Ethan/TheDragonFire961.
     This file is part of Education Cybersafety.
@@ -187,7 +187,7 @@ class Ref {
         // Add a list to the reference engine
         var i;
         for (i = 0; i < arguments.length; i++) {
-            this.reflist[entries][i] = arguments[i];
+            this.reflist[this.entries][i] = arguments[i];
         }
         // ^^ Partially sourced from W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum
     }
