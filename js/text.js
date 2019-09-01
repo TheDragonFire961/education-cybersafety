@@ -207,6 +207,32 @@ class Ref {
         return '(' + this.reflist[entries_temp][4].split(" ").slice(-1)[0] + ', ' + date + ')';
         // ^^ Partially sourced from W3Schools: https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_arguments_sum
     }
+    // Creates reflist. Complies to Harvard standard.
+    RefList() {
+        var i;
+        var reflist_temp = '<div id="references">';
+        for (i = 0; i < this.reflist.length; i++) { 
+            if (this.reflist[i][0] === "web") {
+                var reflist_author_split_temp = this.reflist[i][4].split(" ")
+                reflist_temp += '<p>' + reflist_author_split_temp.slice(-1)[0] + ', ' + reflist_author_split_temp[0].charAt(0) + ', ';
+            }
+            if (this.reflist[i][6] === null) { 
+	            reflist_temp += "n.d." + ', <i>';
+	        } else {
+	            reflist_temp += this.reflist[i][6] + ', <i>';
+            }
+            reflist_temp += this.reflist[i][1] + '.</i> [Online]<br>';
+            if (this.reflist[i][0] === "web") {
+                reflist_temp += 'Available at <a href="' + this.reflist[i][0] + '">' + this.reflist[i][0] + '</a>';
+            }
+            if (typeof this.reflist[i][9] === 'number' && typeof this.reflist[i][10] === 'string' && typeof this.reflist[i][11] === 'number') {
+                reflist_temp += '<br>[Accessed ' + this.reflist[i][9] + ' ' + this.reflist[i][10] + ' ' + this.reflist[i][11] + ']';
+            }
+        }
+        reflist_temp = '</div>';
+        this.Clear();
+        return reflist_temp;
+    }
     Clear() {
         return this.reflist = [];
     }
