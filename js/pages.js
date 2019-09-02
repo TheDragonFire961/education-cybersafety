@@ -84,14 +84,20 @@ a hurtful and untrue statement about another entity.'));
         this.text.Queue(this.text.NewH(2, 'Litigation over defamation'));
         this.text.Queue(this.text.NewP('Several lawsuits have been fought over defamation.'));
         this.text.Queue(this.text.NewP('In Australia, a former high school student was ordered to pay $100,000 in damages over a series of defamatory posts. His victim was one of his teachers.'));
-        this.text.Queue(this.text.NewP('In the US, a teenager, identified only as John Doe, was beset by four pranksters who created a fake Facebook profile impersonating him and making racist and explicitily sexual comments with it. It attracted 580 friends and falsely identitfied John as homosexual. Damages being sought exceed $50,000.' + this.ref.Web('https://abcnews.go.com/Technology/AheadoftheCurve/teens-sued-fake-facebook-profile/story?id=8702282', 'Teens Sued For Fake Facebook Profile', 'ABC News', 'Ki Mae Heussner', false, 2009, 'September', 29, 2019, 'September', 2)));
+        this.text.Queue(this.text.NewP('In the US, a teenager, identified only as John Doe, was beset by four pranksters who created a fake Facebook profile impersonating him and making racist and explicitily sexual comments with it. It attracted 580 friends and falsely identitfied John as homosexual. Damages being sought exceed $50,000. ' + this.ref.Web('https://abcnews.go.com/Technology/AheadoftheCurve/teens-sued-fake-facebook-profile/story?id=8702282', 'Teens Sued For Fake Facebook Profile', 'ABC News', 'Ki Mae Heussner', false, 2009, 'September', 29, 2019, 'September', 2)));
         this.text.Queue(this.text.NewH(2, 'If you&apos;re accused of defamation'));
-        this.text.Queue(this.text.NewP('If you are accused of defamation, and you realise that the post was offensive, you should take down the offending post and apologise. The victim might forgive you and you may avoid court.' + this.ref.Web('https://www.slatergordon.com.au/blog/5-things-to-know-about-social-media-defamation', '5 things to know about social media defamation', 'Slater and Gordon', 'Slater and Gordon', true, 2014, 'March', 17, 2019, 'September', 2)));
+        this.text.Queue(this.text.NewP('If you are accused of defamation, and you realise that the post was offensive, you should take down the offending post and apologise. The victim might forgive you and you may avoid court. ' + this.ref.Web('https://www.slatergordon.com.au/blog/5-things-to-know-about-social-media-defamation', '5 things to know about social media defamation', 'Slater and Gordon', 'Slater and Gordon', true, 2014, 'March', 17, 2019, 'September', 2)));
+        this.text.Queue(this.text.NewH(2, 'References'));
         this.text.Queue(this.ref.RefList());
         this.text.Queue(true, true);
     }
     Tips() {
-        this.text.Queue(this.text.NewH(1, 'Tips to protect against Identity theft')); 
+        this.text.Queue(this.text.NewH(1, 'Tips to Protect Against Identity Theft and Oversharing'));
+        this.text.Queue(this.text.PageNavbar('Home', "pages.LoadPage('Introduction');", 'Tips to Protect Against Identity Theft', "pages.LoadPage('Tips');"));
+        this.text.Queue(this.text.NewP('Despite the threats of identity theft and oversharing on social media, there are ways to protect yourself.<ul><li>Avoid sharing too much personal information online on social media.</li><li>Use the privacy setting to protect privacy.</li><li>Try and keep track of all your online accounts and be careful of the ones you actively use and delete the ones you don’t use.</li><li>Google yourself to see your online image and reputation.</li><li>Keep separate accounts for separate reasons (if possible).</li><li>Keep track of your passwords and never share them in the online world.</li><li>Regularly change your passwords.</li><li>Log off from accounts after use.</li></ul> ' + this.ref.Web('https://prezi.com/jijoyq-jkdrr/the-importance-of-a-positive-digital-footprint/', 'THE IMPORTANCE OF A POSITIVE DIGITAL FOOTPRINT', 'Prezi', 'pr an', true, null, null, null, 2019, 'July', 2)));
+        this.text.Queue(this.text.NewH(2, 'References'));
+        this.text.Queue(this.ref.RefList());
+        this.text.Queue(true, true);
     }
     Run() {
         // Starts the page handler. '
@@ -118,6 +124,10 @@ a hurtful and untrue statement about another entity.'));
         if (page === "Defamation") {
             this.pageId = "Defamation";
             this.Defamation();
+        }
+        if (page === "Tips") {
+            this.pageId = "Tips";
+            this.Tips();
         }
     }
     constructor() {        
