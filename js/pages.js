@@ -40,6 +40,7 @@ class Pages {
     }
     Identity_theft() {
         this.text.Queue(this.text.NewH(1, 'Impersonation'));
+        this.text.Queue(this.text.PageNavbar('Home', "pages.LoadPage('Introduction');", 'Digital Footprint', "pages.LoadPage('Digital_footprint');"));
         this.text.Queue(this.text.NewP('Impersonation is the art of stealing a victim’s online identity and/or fraudulently posing as them, and a common issue that can arise from poor online safety. There are a variety of motives to explain why one may choose to impersonate a victim, be it for financial gain, to attack a victim or other means.'));
         this.text.Queue(this.text.NewP('One particular example is of a woman, herein given the pseudonym “Margaret”. Following a date with a man named Marcos Lujan, of nine month’s length, Margaret decided to end her relationship with Marcos. \
 However, in retaliation, Marcos started to impersonate her online and solicited sex from groups of men. These men would visit Margaret under the guise that she had given them permission to undertake sexual intercourse with Margaret and harass her about this. Note that the real Margaret had never given them permission for sexual intercourse, but Marcos, impersonating her, had convinced many groups of men that she had. Following her harassment, Margaret moved away from her South Austin, United States home and was diagnosed with post-traumatic stress disorder.'));
