@@ -145,7 +145,7 @@ class textClass {
         for (i = 0; i < arguments.length; i++) { 
 		// Odd even test from <https://stackoverflow.com/questions/6211613/testing-whether-a-value-is-odd-or-even>
             if (i === 0 || !!(i && (i%2))) {
-                 navbar_temp += NewA(arguments[0], '#', arguments[1]);
+                 navbar_temp += this.NewA(arguments[0], '#', arguments[1]);
           		 if (i !== last_argument) {
                      navbar_temp += ' &gt; ';
 		         }
