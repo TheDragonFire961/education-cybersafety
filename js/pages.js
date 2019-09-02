@@ -91,7 +91,7 @@ a hurtful and untrue statement about another entity.'));
         this.text.Queue(true, true);
     }
     Tips() {
-        this.text.Queue(this.text.NewH(1, 'Tips to protect against Identity theft'); 
+        this.text.Queue(this.text.NewH(1, 'Tips to protect against Identity theft')); 
     }
     Run() {
         // Starts the page handler. '
