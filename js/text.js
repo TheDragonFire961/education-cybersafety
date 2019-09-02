@@ -141,7 +141,7 @@ class textClass {
     PageNavbar() {
         var i;
 		var navbar_temp = '';
-		var last_argument = arguments.length - 1;
+		var last_argument = arguments.length - 2;
         for (i = 0; i < arguments.length; i++) { 
 		// Odd even test from <https://stackoverflow.com/questions/6211613/testing-whether-a-value-is-odd-or-even> 
 		// REPLACED with https://forum.tutorials7.com/1719/how-to-check-if-number-is-even-in-javascript
