@@ -34,7 +34,7 @@ class Pages {
 	//  **Li: Lilly. No, that I isn't the first letter of her last name.
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
-        this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
+        this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet. It gives advice as to how to keep your online identity safe from impersonation and defamation, explains what various online threats such as impersonation, and gives examples of what has happened to people online who did not keep their identity safe.'));
         this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft');") + '</li><li>' + this.text.NewA('Oversharing on social media', '#', "pages.LoadPage('Digital_footprint_management');") + '</li><li style="text-indent:1.3em;">' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint');") + '</li><li>' + this.text.NewA('Defamation on social media', '#', "pages.LoadPage('Defamation');") + '</li><li>' + this.text.NewA('Tips to prevent identity theft and oversharing', '#', "pages.LoadPage('Tips');") + '</li></ul>'));
         this.ref.RefList();
 	    this.text.Queue(true, true);
