@@ -75,8 +75,8 @@ Boredom - people, bored, give away personal information freely without realising
         this.text.Queue(true, true);
     }
     Defamation() {
-        this.text.PageNav('Home', "pages.LoadPage('Introduction');", 'Defamation on Social Media', "pages.LoadPage('Defamation');");
         this.text.Queue(this.text.NewH(1, 'Defamation on Social Media'));
+	this.text.Queue(this.text.PageNavbar('Home', "pages.LoadPage('Introduction');", 'Defamation on Social Media', "pages.LoadPage('Defamation');");
         this.text.Queue(this.text.NewP('Defamation on social media is as effective as on other classical means. The fact that social media facilitates broadcasting information adds further risk. Further, you can be just as liable if you defame another person.'));
         this.text.Queue(this.text.NewP('Defamation occurs when a person intentionally spreads information about another person, group or company that can (or has the goal to) either damage their reputation or make others think less of them. Defamation can be effected in print, via photos or over the internet. The latter medium is relatively new but the same principles apply. Even if you only share defamatory material (for example, retweeting a Twitter tweet), you can be found guilty of defamation. Several defences of defamation exist, including that the defaming statement was true, or expression of an honest opinion. Bar these two, you can be held liable for defamation if you spread information which constitues \
 a hurtful and untrue statement about another entity.'));
