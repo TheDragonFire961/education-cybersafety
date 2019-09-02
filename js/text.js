@@ -139,6 +139,7 @@ class textClass {
 		return this.NewA(this.NewImg(path, alt, imgHTMLClass, imgId, imgOthers), imgRef, onclickTarget, 'noopener', '_blank', id, HTMLClass, others); // this... hell
 	}
     PageNavbar() {
+        var i;
 		var navbar_temp = '';
 		var last_argument = arguments.length - 1;
         for (i = 0; i < arguments.length; i++) { 
