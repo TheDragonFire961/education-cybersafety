@@ -30,7 +30,8 @@ class Pages {
     // Each page has its own function in this format (underscores for emphasis):
     // *So, if we had a page about _Digital Footprint_, wholly written by _Lilly_ (if you don't know who she is, that's an alias for
     //  Lillianna), then we would give it the following name, in snake case, preserving original caps. Shorthand author codes:
-    //  **En: Ethan (the author of this comment)
+    //  **En: Ethan (the author of this comment).
+	//  **Li: Lilly. No, that I isn't the first letter of her last name.
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
         this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
@@ -80,10 +81,17 @@ Boredom - people, bored, give away personal information freely without realising
         this.text.Queue(this.text.NewP('Defamation on social media is as effective as on other classical means. The fact that social media facilitates broadcasting information adds further risk. Further, you can be just as liable if you defame another person.'));
         this.text.Queue(this.text.NewP('Defamation occurs when a person intentionally spreads information about another person, group or company that can (or has the goal to) either damage their reputation or make others think less of them. Defamation can be effected in print, via photos or over the internet. The latter medium is relatively new but the same principles apply. Even if you only share defamatory material (for example, retweeting a Twitter tweet), you can be found guilty of defamation. Several defences of defamation exist, including that the defaming statement was true, or expression of an honest opinion. Bar these two, you can be held liable for defamation if you spread information which constitues \
 a hurtful and untrue statement about another entity.'));
+        this.text.Queue(this.text.NewH(2, 'Litigation over defamation'));
+        this.text.Queue(this.text.NewP('Several lawsuits have been fought over defamation.'));
+        this.text.Queue(this.text.NewP('In Australia, a former high school student was ordered to pay $100,000 in damages over a series of defamatory posts. His victim was one of his teachers.'));
+        this.text.Queue(this.text.NewP('In the US, a teenager, identified only as John Doe, was beset by four pranksters who created a fake Facebook profile impersonating him and making racist and explicitily sexual comments with it. It attracted 580 friends and falsely identitfied John as homosexual. Damages being sought exceed $50,000.' + this.ref.Web('https://abcnews.go.com/Technology/AheadoftheCurve/teens-sued-fake-facebook-profile/story?id=8702282', 'Teens Sued For Fake Facebook Profile', 'ABC News', 'Ki Mae Heussner', false, 2009, 'September', 29, 2019, 'September', 2)));
         this.text.Queue(this.text.NewH(2, 'If you&apos;re accused of defamation'));
         this.text.Queue(this.text.NewP('If you are accused of defamation, and you realise that the post was offensive, you should take down the offending post and apologise. The victim might forgive you and you may avoid court.' + this.ref.Web('https://www.slatergordon.com.au/blog/5-things-to-know-about-social-media-defamation', '5 things to know about social media defamation', 'Slater and Gordon', 'Slater and Gordon', true, 2014, 'March', 17, 2019, 'September', 2)));
         this.text.Queue(this.ref.RefList());
         this.text.Queue(true, true);
+    }
+    Tips() {
+        this.text.Queue(this.text.NewH(1, 'Tips to protect against Identity theft'); 
     }
     Run() {
         // Starts the page handler. '
