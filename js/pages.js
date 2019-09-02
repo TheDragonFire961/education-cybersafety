@@ -34,9 +34,9 @@ class Pages {
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
         this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
-        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft');") + '</li><li>' + this.text.NewA('Oversharing on social media', '#', "pages.LoadPage('Digital_footprint_management');") + '</li><li style="text-indent:2em;">' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint');") + '</li></ul>'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft');") + '</li><li>' + this.text.NewA('Oversharing on social media', '#', "pages.LoadPage('Digital_footprint_management');") + '</li><li style="text-indent:1.3em;">' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint');") + '</li><li>' + this.text.NewA('Defamation on social media', '#', "pages.LoadPage('Defamation');") + '</li></ul>'));
         this.ref.RefList();
-	this.text.Queue(true, true);
+	    this.text.Queue(true, true);
     }
     Identity_theft() {
         this.text.Queue(this.text.NewH(1, 'Impersonation'));
@@ -74,6 +74,17 @@ Boredom - people, bored, give away personal information freely without realising
         this.text.Queue(this.text.NewP('Some technology often leads to unintended consequences, such as threats to privacy and changes in the relationship between public and private buttons. These issues have been studied with respect to a variety of internet problems.'));
         this.text.Queue(true, true);
     }
+    Defamation() {
+        this.text.PageNav('Home', "pages.LoadPage('Introduction');", 'Defamation on Social Media', "pages.LoadPage('Defamation');");
+        this.text.Queue(this.text.NewH(1, 'Defamation on Social Media'));
+        this.text.Queue(this.text.NewP('Defamation on social media is as effective as on other classical means. The fact that social media facilitates broadcasting information adds further risk. Further, you can be just as liable if you defame another person.'));
+        this.text.Queue(this.text.NewP('Defamation occurs when a person intentionally spreads information about another person, group or company that can (or has the goal to) either damage their reputation or make others think less of them. Defamation can be effected in print, via photos or over the internet. The latter medium is relatively new but the same principles apply. Even if you only share defamatory material (for example, retweeting a Twitter tweet), you can be found guilty of defamation. Several defences of defamation exist, including that the defaming statement was true, or expression of an honest opinion. Bar these two, you can be held liable for defamation if you spread information which constitues \
+a hurtful and untrue statement about another entity.'));
+        this.text.Queue(this.text.NewH(2, 'If you&apos;re accused of defamation'));
+        this.text.Queue(this.text.NewP('If you are accused of defamation, and you realise that the post was offensive, you should take down the offending post and apologise. The victim might forgive you and you may avoid court.' + this.ref.Web('https://www.slatergordon.com.au/blog/5-things-to-know-about-social-media-defamation', '5 things to know about social media defamation', 'Slater and Gordon', 'Slater and Gordon', true, 2014, 'March', 17, 2019, 'September', 2)));
+        this.text.Queue(this.web.RefList());
+        this.text.Queue(true, true);
+    }
     Run() {
         // Starts the page handler. '
         this.LoadPage("Introduction");
@@ -95,6 +106,10 @@ Boredom - people, bored, give away personal information freely without realising
         if (page === "Digital_footprint_management") {
             this.pageId = "Digital_footprint_management";
             this.Digital_footprint_management();
+        }
+        if (page === "Defamation") {
+            this.pageId = "Defamation";
+            this.Defamation();
         }
     }
     constructor() {        
