@@ -34,7 +34,7 @@ class Pages {
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
         this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
-        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft');") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint');") + '</ul>'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft');") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint');") + '</li><li>' + this.text.NewA('Oversharing on social media?', '#', "pages.LoadPage('Digital_footprint_management');") + '</li></ul>'));
         this.ref.RefList();
 	this.text.Queue(true, true);
     }
