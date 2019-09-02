@@ -82,7 +82,7 @@ Boredom - people, bored, give away personal information freely without realising
 a hurtful and untrue statement about another entity.'));
         this.text.Queue(this.text.NewH(2, 'If you&apos;re accused of defamation'));
         this.text.Queue(this.text.NewP('If you are accused of defamation, and you realise that the post was offensive, you should take down the offending post and apologise. The victim might forgive you and you may avoid court.' + this.ref.Web('https://www.slatergordon.com.au/blog/5-things-to-know-about-social-media-defamation', '5 things to know about social media defamation', 'Slater and Gordon', 'Slater and Gordon', true, 2014, 'March', 17, 2019, 'September', 2)));
-        this.text.Queue(this.web.RefList());
+        this.text.Queue(this.ref.RefList());
         this.text.Queue(true, true);
     }
     Run() {
