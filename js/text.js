@@ -143,8 +143,9 @@ class textClass {
 		var navbar_temp = '';
 		var last_argument = arguments.length - 1;
         for (i = 0; i < arguments.length; i++) { 
-		// Odd even test from <https://stackoverflow.com/questions/6211613/testing-whether-a-value-is-odd-or-even>
-            if (i === 0 || !(!!(i && (i%2))) {
+		// Odd even test from <https://stackoverflow.com/questions/6211613/testing-whether-a-value-is-odd-or-even> 
+		// REPLACED with https://forum.tutorials7.com/1719/how-to-check-if-number-is-even-in-javascript
+            if (i === 0 || i % 2 === 0) {
                  navbar_temp += this.NewA(arguments[i], '#', arguments[i + 1]);
           		 if (i !== last_argument) {
                      navbar_temp += ' &gt; ';
