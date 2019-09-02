@@ -1,7 +1,7 @@
 /*
     pages.js: contains JS for working with text.
 	
-    Copyright (C) 2019 Ethan/TheDragonFire961.
+    Copyright (C) 2019 Ethan/TheDragonFire961 and Lillianna.
     This file is part of Education Cybersafety.
     
     Education Cybersafety is free software: you can redistribute it and/or modify
@@ -34,7 +34,7 @@ class Pages {
     Introduction() {
         this.text.Queue(this.text.NewH(1, 'Welcome to Education Cybersafety!'));
         this.text.Queue(this.text.NewP('Education Cybersafety is a guide to the cruel world that is the internet.'));
-        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft')") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint')") + '</ul>'));
+        this.text.Queue(this.text.NewP('Our guides include:<ul><li>' + this.text.NewA('Impersonation', '#', "pages.LoadPage('Identity_theft');") + '</li><li>' + this.text.NewA('What is a digital footprint?', '#', "pages.LoadPage('Digital_footprint');") + '</ul>'));
         this.ref.RefList();
 	this.text.Queue(true, true);
     }
@@ -55,7 +55,7 @@ the operating network should remove the profile but information should be saved 
         // @author li
         // Pointer to original DOCX file: 
         this.text.Queue(this.text.NewH(1, 'Digital Footprint'));
-		this.text.Queue(this.text.PageNavbar('Home', "pages.LoadPage('Introduction')", 'Digital Footprint', "pages.LoadPage('Digital_footprint')"));
+		this.text.Queue(this.text.PageNavbar('Home', "pages.LoadPage('Introduction');", 'Digital Footprint', "pages.LoadPage('Digital_footprint');"));
         this.text.Queue(this.text.NewP('A digital footprint is the information about a particular person that exists on the Internet as a result of their online activity. ' + this.ref.Web('https://www.google.com/search?q=what+is+a+digital+footprint', 'what is a digital footprint - Google Search', 'Google', 'Google', true, null, null, null, 2019, 'July', 2, {date_format: 'DATEFORMAT_jFY'}) + ' It includes every piece of information you provide on the internet and includes name, gender, email address and other properties. ' + this.ref.Web('https://prezi.com/jijoyq-jkdrr/the-importance-of-a-positive-digital-footprint/', 'THE IMPORTANCE OF A POSITIVE DIGITAL FOOTPRINT', 'Prezi', 'pr an', true, null, null, null, 2019, 'July', 2, ))); // When Edge DevTools says you need an additional bracket but you don't know what the hell it's talking about. Thanks to THIS line of code I'm neglecting one of Lilly's emails! How fun.
         this.text.Queue(this.text.NewP('An individual&apos;s digital footprint is a self portrait of a person painted online. It can be used to form an image about an individual on the online world. It can be used by future employers and universities to help vet potential students/employees, perhaps disqualifying them if their digital footprint says so.'));
 	    this.text.Queue(this.text.NewH(2, 'References'));
